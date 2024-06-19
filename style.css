@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: bellota;
+
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 1.8em;}
+p{font-size: 1.4em;}
+
+
+.boton{
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: rgb(255, 128, 109);
+    transition: all, 500ms;
+}
+
+.boton:hover {
+    background-color:rgb(255, 166, 166);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(242, 242, 242);
+    position: sticky;
+    top: 0px;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+header .logo {
+    margin: 0;
+    font-family: "Titan One", sans-serif;
+    font-size: 1.7em;
+    padding: 10px 20px;
+    color: rgb(255, 8, 0);
+    /*text-shadow: 3px 3px rgb(0, 0, 0);*/
+}
+
+header span.col{
+    color: rgb(229, 229, 31);
+}
+
+header span.om{
+    color: rgb(65, 65, 240);
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+header a{
+    text-decoration: none;
+    padding: 5px 12px;
+    color: black;
+    font-weight:bold;
+}
+
+header a:hover{
+    color: rgb(87, 190, 224);
+}
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.265),
+        rgba(0, 0, 0, 0.273)
+    )
+    ,url(Imagenes/bandera-colombia.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+
+}
+
+#hero h1{
+    color:aliceblue;
+    text-shadow: 3px 3px black;
+}
+
+
+#resumen .container {
+    text-align: center;
+    padding: 70px 30px ;
+   
+}
+
+#resumen .img-col{
+    display: none;
+}
+
+#caracteristicas {
+    margin: 0px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.443),
+        rgba(255, 255, 255, 0.605)
+    )
+    ,url(Imagenes/cartagena.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 80px 15px;
+
+}
+
+#caracteristicas h1{
+    padding-bottom: 50px;
+    margin: 0px;
+}
+
+#caracteristicas h2 {
+    color: white;
+    font-size: 2.9em;
+}
+
+#caracteristicas p{
+    display: none;
+}
+
+#caracteristicas a{
+    font-size: 1.3em;
+}
+
+#caracteristicas .carta{
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    transition: all 500ms;
+
+}
+
+#caracteristicas .carta:hover{
+    transform: scale(1.05);
+}
+
+.carta:first-child{
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.443),
+        rgba(0, 0, 0, 0.184)
+    )
+    ,url(Imagenes/bandera-de-Colombia.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carta:nth-child(2){
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.443),
+        rgba(0, 0, 0, 0.184)
+    )
+    ,url(Imagenes/biodiversidad.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.443),
+        rgba(0, 0, 0, 0.184)
+    )
+    ,url(Imagenes/cultura.jpeg);
+    background-position: center 12%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.443),
+        rgba(0, 0, 0, 0.184)
+    )
+    ,url(Imagenes/poblacion.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+#turismo .container{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+#turismo h1 {
+    padding: 30px 0px 30px;
+}
+
+#turismo h2{
+    margin: 0px;
+}
+
+#turismo .poster{
+    margin: 30px;
+    color: white;
+    border-radius: 20px;
+}
+
+.poster:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.443),
+        rgba(0, 0, 0, 0.184)
+    )
+    ,url(Imagenes/sierra\ nevada.jpeg);
+    background-position: center 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.poster:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.443),
+        rgba(0, 0, 0, 0.184)
+    )
+    ,url(Imagenes/piedra\ del\ .jpeg);
+    background-position: center 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.poster:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.443),
+        rgba(0, 0, 0, 0.184)
+    )
+    ,url(Imagenes/valle\ del\ cocora.jpeg);
+    background-position: center 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#reserva {
+    background:linear-gradient(to top,
+        rgba(240, 9, 9, 0.447),
+        rgba(228, 116, 116, 0.342),
+        rgba(255, 255, 255, 0.541)
+    );
+    background-size: cover;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+#reserva .container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    
+}
+
+#reserva h3 {
+    font-weight: bold;
+    font-size: 2.3em;
+}
+
+
+#reserva a {
+    margin-top: 30px;
+
+}
+
+#reserva i{
+    color: black;
+    width: 50px;
+}
+
+
+/* -------------------- Windows Mode ----------*/
+
+
+@media (min-width: 720px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-right: 20px;
+    }
+
+    header a{
+        padding-left: 20px;
+    }
+
+    #resumen .container{
+        display: flex;
+        justify-content:space-between;
+        height: 50vh;
+    }
+
+    #resumen .img-col{
+        display: flex;
+        position: relative;
+        bottom: 190px;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        background: url(Imagenes/pajaro.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-sizing: border-box;
+
+
+    }
+
+    #resumen .texto{
+        text-align: initial;
+        width: 80%;
+    } 
+
+    #caracteristicas .secciones{
+        display: flex;
+        justify-content: center;
+    }
+
+    #caracteristicas .carta {
+        margin-left: 20px;
+
+    }
+    
+    #caracteristicas p{
+        display: block;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+    #turismo .secciones2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    #turismo .poster{
+        padding: 30px;
+    }
+
+
+
+  
+}
